@@ -19,7 +19,10 @@ def fetch_courses():
 
   creneaux = re.search(r'"rowsProposition":(\[.*\]),"rowsMoniteur"', resp.text)
   creneaux = json.loads(creneaux.group(1))
-  creneaux = [[d['info_date'], d['heure_debut'], d['heure_fin'], d['moniteur'], d['id_jour'], d['id_lac']] for d in creneaux if d['moniteur'] in myMoniteur]
+  if myMoniteur:
+    creneaux = [[d['info_date'], d['heure_debut'], d['heure_fin'], d['moniteur'], d['id_jour'], d['id_lac']] for d in creneaux if d['moniteur'] in myMoniteur]
+  else:
+    creneaux = [[d['info_date'], d['heure_debut'], d['heure_fin'], d['moniteur'], d['id_jour'], d['id_lac']] for d in creneaux]
   #           date, debut, fin, moniteur, jour, lieu
   #             0     1     2      3        4     5   
   lieux = re.search(r'"rowsPointDeCours":(\[.*\]),"rowsProposition"', resp.text)
