@@ -1,1 +1,6 @@
 creds.py
+__pycache__/
+re
+json
+requests
+*.txt
