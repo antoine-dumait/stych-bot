@@ -1,3 +1,2 @@
-token = ""
-channel_id = ""
+webhooks_url = ""
 remember_me = ""
