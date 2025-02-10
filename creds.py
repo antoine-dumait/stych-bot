@@ -1,2 +1,2 @@
-webhooks_url = "https://discord.com/api/webhooks/1333813694173413436/xGB41c5csfA4dFFADU0IRS6vqpgW_4XAYIPWzGad9E_Ml4K7DEICXY8KDbzfAyI70lRV"
-remember_me = "68d092abfb61156b1051136ddec12ca982a2806ac1b307eb29fe31b5e20761db%3A340db3a69877936d408bba682bf7dccb%3Ae9e3db99daaff55142babd0e0e71db92d6eea18f8d6cee1d7aecc72ffefa4456"
+webhooks_url = ""
+remember_me = ""
